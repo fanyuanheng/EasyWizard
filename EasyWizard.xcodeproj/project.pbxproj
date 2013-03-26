@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE03708827826CB070CCFA88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0374B3213ED8C7351510CD /* main.m */; };
+		CE037185F2B5208C222F2CBC /* EasyWizardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0372A067CBAD63234FDD98 /* EasyWizardTests.m */; };
+		CE0373977601306E657A4FCC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0378C6333F5427928D32CC /* SenTestingKit.framework */; };
+		CE0376A4C097ACC221D70FBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0375B679D5A8550FD8F1AC /* InfoPlist.strings */; };
+		CE0376D55FA17402C5331217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE037511CF33C716741C89E6 /* UIKit.framework */; };
+		CE037A02B643624B81422210 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE037F48FE3AA86B1E488622 /* Foundation.framework */; };
+		CE037A9AB73EA2E9652B3E30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE037DC5E210AA8F4D2B607B /* CoreGraphics.framework */; };
+		CE037B5F11EDEC4A7C47BEFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE037511CF33C716741C89E6 /* UIKit.framework */; };
+		CE037BA3345DE739FBAB9574 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE037ACC81538EC55BE6044F /* Default@2x.png */; };
+		CE037BFD93D2E69AE2107FFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0371793D1EBCA3D6D71499 /* AppDelegate.m */; };
+		CE037C653E1436516E00ACB9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0375C4BF62991A9B2CE25E /* Default.png */; };
+		CE037D3041EF2E9EAAA2FE9D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0379B09F2DC074323B2679 /* Default-568h@2x.png */; };
+		CE037E06C26171CE5C09EB03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0373B8F2D2EC21AF041AD8 /* InfoPlist.strings */; };
+		CE037F59EDE53C7AC8673594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE037F48FE3AA86B1E488622 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE037E952A7C35703A355ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0375DA803B863AD21C3466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE03753265E4D35D345939A2;
+			remoteInfo = EasyWizard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE0371793D1EBCA3D6D71499 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE0372A067CBAD63234FDD98 /* EasyWizardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyWizardTests.m; sourceTree = "<group>"; };
+		CE0372CA1CD1E944500B160B /* EasyWizardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyWizardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0373A974A0B55A6CC7230F /* EasyWizardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "EasyWizardTests-Info.plist"; sourceTree = "<group>"; };
+		CE0374B3213ED8C7351510CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE037511CF33C716741C89E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE0375211B486D828BF837F6 /* EasyWizard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "EasyWizard-Info.plist"; sourceTree = "<group>"; };
+		CE0375A09C917203105B30C0 /* EasyWizardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyWizardTests.h; sourceTree = "<group>"; };
+		CE0375C4BF62991A9B2CE25E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE0378C6333F5427928D32CC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE0379B09F2DC074323B2679 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE037ACC81538EC55BE6044F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE037B1027AC1EE5200BDA3A /* EasyWizard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyWizard-Prefix.pch"; sourceTree = "<group>"; };
+		CE037D88757F6D6499AA4315 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE037D8B5244DF3A9495EC03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE037DC5E210AA8F4D2B607B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE037E8C9C408D76F23939DB /* EasyWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE037F48FE3AA86B1E488622 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE037F69389A4D538D50A206 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE037153B73067F441C98AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0373977601306E657A4FCC /* SenTestingKit.framework in Frameworks */,
+				CE037B5F11EDEC4A7C47BEFC /* UIKit.framework in Frameworks */,
+				CE037A02B643624B81422210 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03741A0FDDF8F7DA05E0F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0376D55FA17402C5331217 /* UIKit.framework in Frameworks */,
+				CE037F59EDE53C7AC8673594 /* Foundation.framework in Frameworks */,
+				CE037A9AB73EA2E9652B3E30 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE03711EE0B26A5B697DE60E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE037E8C9C408D76F23939DB /* EasyWizard.app */,
+				CE0372CA1CD1E944500B160B /* EasyWizardTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0371B18D8D4E0D78A7F293 = {
+			isa = PBXGroup;
+			children = (
+				CE03711EE0B26A5B697DE60E /* Products */,
+				CE037D25C28809415CC3D74C /* Frameworks */,
+				CE0375313C00A7FA0345D363 /* EasyWizard */,
+				CE0377C80E9DA19E4BE54E80 /* EasyWizardTests */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0375313C00A7FA0345D363 /* EasyWizard */ = {
+			isa = PBXGroup;
+			children = (
+				CE0375F18916EC34FBB9F6C8 /* Supporting Files */,
+				CE037D88757F6D6499AA4315 /* AppDelegate.h */,
+				CE0371793D1EBCA3D6D71499 /* AppDelegate.m */,
+			);
+			path = EasyWizard;
+			sourceTree = "<group>";
+		};
+		CE0375F18916EC34FBB9F6C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0375211B486D828BF837F6 /* EasyWizard-Info.plist */,
+				CE0373B8F2D2EC21AF041AD8 /* InfoPlist.strings */,
+				CE0374B3213ED8C7351510CD /* main.m */,
+				CE037B1027AC1EE5200BDA3A /* EasyWizard-Prefix.pch */,
+				CE0375C4BF62991A9B2CE25E /* Default.png */,
+				CE037ACC81538EC55BE6044F /* Default@2x.png */,
+				CE0379B09F2DC074323B2679 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE0377C80E9DA19E4BE54E80 /* EasyWizardTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE0377EAD6D90D584A1B08E4 /* Supporting Files */,
+				CE0375A09C917203105B30C0 /* EasyWizardTests.h */,
+				CE0372A067CBAD63234FDD98 /* EasyWizardTests.m */,
+			);
+			path = EasyWizardTests;
+			sourceTree = "<group>";
+		};
+		CE0377EAD6D90D584A1B08E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0373A974A0B55A6CC7230F /* EasyWizardTests-Info.plist */,
+				CE0375B679D5A8550FD8F1AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE037D25C28809415CC3D74C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE037511CF33C716741C89E6 /* UIKit.framework */,
+				CE037F48FE3AA86B1E488622 /* Foundation.framework */,
+				CE037DC5E210AA8F4D2B607B /* CoreGraphics.framework */,
+				CE0378C6333F5427928D32CC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE037074D8A2C7AD5991FFBE /* EasyWizardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE037F00202C90D7708E427E /* Build configuration list for PBXNativeTarget "EasyWizardTests" */;
+			buildPhases = (
+				CE0373B6EE2A467A87874DE2 /* Sources */,
+				CE037153B73067F441C98AA9 /* Frameworks */,
+				CE037A9320AD8DAF23AE7980 /* Resources */,
+				CE0377ACBAB04E98EFFE761D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE037CF5EA0C764DBC8CA7F3 /* PBXTargetDependency */,
+			);
+			name = EasyWizardTests;
+			productName = EasyWizardTests;
+			productReference = CE0372CA1CD1E944500B160B /* EasyWizardTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CE03753265E4D35D345939A2 /* EasyWizard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE037D51D6D556522B049F7C /* Build configuration list for PBXNativeTarget "EasyWizard" */;
+			buildPhases = (
+				CE0376EC3E0E1562D09194CF /* Sources */,
+				CE03741A0FDDF8F7DA05E0F2 /* Frameworks */,
+				CE037E56A6D71E01730594B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyWizard;
+			productName = EasyWizard;
+			productReference = CE037E8C9C408D76F23939DB /* EasyWizard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0375DA803B863AD21C3466 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CE037A6610BD33E9C6BA2B9C /* Build configuration list for PBXProject "EasyWizard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE0371B18D8D4E0D78A7F293;
+			productRefGroup = CE03711EE0B26A5B697DE60E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE03753265E4D35D345939A2 /* EasyWizard */,
+				CE037074D8A2C7AD5991FFBE /* EasyWizardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE037A9320AD8DAF23AE7980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0376A4C097ACC221D70FBD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE037E56A6D71E01730594B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE037E06C26171CE5C09EB03 /* InfoPlist.strings in Resources */,
+				CE037C653E1436516E00ACB9 /* Default.png in Resources */,
+				CE037BA3345DE739FBAB9574 /* Default@2x.png in Resources */,
+				CE037D3041EF2E9EAAA2FE9D /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE0377ACBAB04E98EFFE761D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0373B6EE2A467A87874DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE037185F2B5208C222F2CBC /* EasyWizardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0376EC3E0E1562D09194CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE03708827826CB070CCFA88 /* main.m in Sources */,
+				CE037BFD93D2E69AE2107FFE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE037CF5EA0C764DBC8CA7F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE03753265E4D35D345939A2 /* EasyWizard */;
+			targetProxy = CE037E952A7C35703A355ED1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE0373B8F2D2EC21AF041AD8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE037F69389A4D538D50A206 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE0375B679D5A8550FD8F1AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE037D8B5244DF3A9495EC03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE03702D43F6FFE2F0D1D299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EasyWizard.app/EasyWizard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyWizard/EasyWizard-Prefix.pch";
+				INFOPLIST_FILE = "EasyWizardTests/EasyWizardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE037278C10B906543C5997D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE03728DFB5D40855C74E37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EasyWizard.app/EasyWizard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyWizard/EasyWizard-Prefix.pch";
+				INFOPLIST_FILE = "EasyWizardTests/EasyWizardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		CE0375077D9F7674159CD9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyWizard/EasyWizard-Prefix.pch";
+				INFOPLIST_FILE = "EasyWizard/EasyWizard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE037831DC8E6EC9A6E393EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyWizard/EasyWizard-Prefix.pch";
+				INFOPLIST_FILE = "EasyWizard/EasyWizard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE037FB95128D46CBB4B06E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE037A6610BD33E9C6BA2B9C /* Build configuration list for PBXProject "EasyWizard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE037FB95128D46CBB4B06E6 /* Release */,
+				CE037278C10B906543C5997D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE037D51D6D556522B049F7C /* Build configuration list for PBXNativeTarget "EasyWizard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE037831DC8E6EC9A6E393EA /* Release */,
+				CE0375077D9F7674159CD9D4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE037F00202C90D7708E427E /* Build configuration list for PBXNativeTarget "EasyWizardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE03728DFB5D40855C74E37B /* Release */,
+				CE03702D43F6FFE2F0D1D299 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0375DA803B863AD21C3466 /* Project object */;
+}
