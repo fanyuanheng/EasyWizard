@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FF4618F17014FD700A44D23 /* EasyWizardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4618E17014FD700A44D23 /* EasyWizardViewController.m */; };
+		0FF4618F17014FD700A44D23 /* EasyWizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4618E17014FD700A44D23 /* EasyWizard.m */; };
+		0FF46192170154A700A44D23 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF46191170154A700A44D23 /* DemoViewController.m */; };
+		0FF461941701572200A44D23 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF461931701572200A44D23 /* DemoView.xib */; };
 		CE03705F8FAA198924EF9729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE037EC4236CDB4D5270C457 /* main.m */; };
 		CE0372848EA316A913F40C16 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE03787CED5C58959294C868 /* Default@2x.png */; };
 		CE03734613EBE303ACF63642 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0373980FCECCFBF85FEFA6 /* Default-568h@2x.png */; };
@@ -21,9 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FF4618D17014FD700A44D23 /* EasyWizardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyWizardViewController.h; sourceTree = "<group>"; };
-		0FF4618E17014FD700A44D23 /* EasyWizardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyWizardViewController.m; sourceTree = "<group>"; };
+		0FF4618D17014FD700A44D23 /* EasyWizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyWizard.h; sourceTree = "<group>"; };
+		0FF4618E17014FD700A44D23 /* EasyWizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyWizard.m; sourceTree = "<group>"; };
+		0FF46190170154A700A44D23 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		0FF46191170154A700A44D23 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		0FF461931701572200A44D23 /* DemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
 		CE0370A907E55AD55DD3F4B6 /* EasyWizard-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "EasyWizard-Info.plist"; sourceTree = "<group>"; };
+		CE0371D14605CB1213311C96 /* EasyWizardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyWizardDelegate.h; sourceTree = "<group>"; };
 		CE0373514ADE00F956077E36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE0373980FCECCFBF85FEFA6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CE037511CF33C716741C89E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -34,7 +40,7 @@
 		CE037DC5E210AA8F4D2B607B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CE037DCC6BA6C9FAE4721922 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CE037E080CF14B495B5E0E52 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE037E8C9C408D76F23939DB /* EasyWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = EasyWizard.app; path = EasyWizardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE037E8C9C408D76F23939DB /* EasyWizardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWizardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE037EC4236CDB4D5270C457 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE037F48FE3AA86B1E488622 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -56,7 +62,7 @@
 		CE03711EE0B26A5B697DE60E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE037E8C9C408D76F23939DB /* EasyWizard.app */,
+				CE037E8C9C408D76F23939DB /* EasyWizardDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,8 +80,9 @@
 		CE0374D38A9F3A14ED7AB244 /* EasyWizard */ = {
 			isa = PBXGroup;
 			children = (
-				0FF4618D17014FD700A44D23 /* EasyWizardViewController.h */,
-				0FF4618E17014FD700A44D23 /* EasyWizardViewController.m */,
+				0FF4618D17014FD700A44D23 /* EasyWizard.h */,
+				0FF4618E17014FD700A44D23 /* EasyWizard.m */,
+				CE0371D14605CB1213311C96 /* EasyWizardDelegate.h */,
 			);
 			path = EasyWizard;
 			sourceTree = "<group>";
@@ -92,6 +99,9 @@
 				CE03783E148C6F61671595FF /* EasyWizard-Prefix.pch */,
 				CE037D41BBB37CADDE8597DC /* en.lproj */,
 				CE037EC4236CDB4D5270C457 /* main.m */,
+				0FF46190170154A700A44D23 /* DemoViewController.h */,
+				0FF46191170154A700A44D23 /* DemoViewController.m */,
+				0FF461931701572200A44D23 /* DemoView.xib */,
 			);
 			path = EasyWizardDemo;
 			sourceTree = "<group>";
@@ -132,7 +142,7 @@
 			);
 			name = EasyWizardDemo;
 			productName = EasyWizard;
-			productReference = CE037E8C9C408D76F23939DB /* EasyWizard.app */;
+			productReference = CE037E8C9C408D76F23939DB /* EasyWizardDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,6 +177,7 @@
 				CE0372848EA316A913F40C16 /* Default@2x.png in Resources */,
 				CE03786D43F5D364BDAE10CD /* EasyWizard-Info.plist in Resources */,
 				CE0377DEFBC1F40EC0D7343D /* InfoPlist.strings in Resources */,
+				0FF461941701572200A44D23 /* DemoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +190,8 @@
 			files = (
 				CE037F1F996970F8E34CF2B8 /* AppDelegate.m in Sources */,
 				CE03705F8FAA198924EF9729 /* main.m in Sources */,
-				0FF4618F17014FD700A44D23 /* EasyWizardViewController.m in Sources */,
+				0FF4618F17014FD700A44D23 /* EasyWizard.m in Sources */,
+				0FF46192170154A700A44D23 /* DemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +245,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EasyWizard/EasyWizard-Prefix.pch";
-				INFOPLIST_FILE = "EasyWizard/EasyWizard-Info.plist";
+				GCC_PREFIX_HEADER = "EasyWizardDemo/EasyWizard-Prefix.pch";
+				INFOPLIST_FILE = "EasyWizardDemo/EasyWizard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -244,8 +256,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EasyWizard/EasyWizard-Prefix.pch";
-				INFOPLIST_FILE = "EasyWizard/EasyWizard-Info.plist";
+				GCC_PREFIX_HEADER = "EasyWizardDemo/EasyWizard-Prefix.pch";
+				INFOPLIST_FILE = "EasyWizardDemo/EasyWizard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
