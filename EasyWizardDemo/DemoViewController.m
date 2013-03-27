@@ -65,5 +65,10 @@
     }
 }
 
+- (UIPageControl *)updatePageStepAtIndex:(int)index {
+    pageControl.currentPage = index;
+    return pageControl;
+}
+
 
 @end

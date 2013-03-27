@@ -47,6 +47,7 @@
 - (void)scrollRight {
     if (currentIndex < [easyWizardDelegate numberOfSteps] - 1) {
         currentIndex++;
+        [self updatePageIfNecessary];
         [self setContentOffset:CGPointMake(CGRectGetWidth(self.frame) * currentIndex, 0) animated:YES];
     }
 }
@@ -54,8 +55,15 @@
 - (void)scrollLeft {
     if (currentIndex > 0) {
         currentIndex--;
+        [self updatePageIfNecessary];
         [self setContentOffset:CGPointMake(CGRectGetWidth(self.frame) * currentIndex, 0) animated:YES];
     }
+}
+
+- (void)updatePageIfNecessary {
+    if ([(id) easyWizardDelegate respondsToSelector:@selector(updatePageStepAtIndex:)]) {
+            [easyWizardDelegate updatePageStepAtIndex:currentIndex];
+        }
 }
 
 @end
