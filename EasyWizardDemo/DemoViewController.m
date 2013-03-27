@@ -14,7 +14,7 @@
 
 @implementation DemoViewController
 
-@synthesize wizardView1, wizardView2, wizardView3, easyWizard;
+@synthesize wizardView1, wizardView2, wizardView3, leftNavButton, rightNavButton, pageControl, easyWizard;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,13 +27,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     easyWizard.easyWizardDelegate = self;
-    [easyWizard reloadWizard];
+    [easyWizard loadWizard];
+    self.pageControl.numberOfPages = 3;
+    self.pageControl.currentPage = 0;
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)nextStep {
+    [easyWizard scrollRight];
+}
+
+- (IBAction)previousStep {
+    [easyWizard scrollLeft];
 }
 
 #pragma EasyWizardDelegate methods

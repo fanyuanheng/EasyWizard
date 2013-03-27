@@ -18,16 +18,20 @@
 @synthesize easyWizardDelegate;
 
 - (void)configEasyWizard {
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator = NO;
+    self.scrollEnabled = NO;
     self.contentSize = CGSizeMake(CGRectGetWidth(self.frame) * [easyWizardDelegate numberOfSteps], CGRectGetHeight(self.frame));
     self.delegate = self;
 }
 
 
-- (void)reloadWizard {
+- (void)loadWizard {
     [self configEasyWizard];
-    [self loadWizardStepAtIndex:0];
-    [self loadWizardStepAtIndex:1];
-    [self loadWizardStepAtIndex:2];
+    currentIndex = 0;
+    for (int i = 0; i < [easyWizardDelegate numberOfSteps]; i++) {
+        [self loadWizardStepAtIndex:i];
+    }
 }
 
 - (void)loadWizardStepAtIndex:(int)index {
@@ -40,5 +44,18 @@
     [self addSubview:view];
 }
 
+- (void)scrollRight {
+    if (currentIndex < [easyWizardDelegate numberOfSteps] - 1) {
+        currentIndex++;
+        [self setContentOffset:CGPointMake(CGRectGetWidth(self.frame) * currentIndex, 0) animated:YES];
+    }
+}
+
+- (void)scrollLeft {
+    if (currentIndex > 0) {
+        currentIndex--;
+        [self setContentOffset:CGPointMake(CGRectGetWidth(self.frame) * currentIndex, 0) animated:YES];
+    }
+}
 
 @end

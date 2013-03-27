@@ -10,12 +10,17 @@
 
 @protocol EasyWizardDelegate;
 
-@interface EasyWizard : UIScrollView <UIScrollViewDelegate>
+@interface EasyWizard : UIScrollView <UIScrollViewDelegate> {
+    int currentIndex;
+}
 
 @property(weak) id <EasyWizardDelegate> easyWizardDelegate;
 
-- (void)reloadWizard;
+- (void)loadWizard;
 
 - (void)loadWizardStepAtIndex:(int)index;
 
+- (void)scrollRight;
+
+- (void)scrollLeft;
 @end
