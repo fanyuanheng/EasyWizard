@@ -20,7 +20,7 @@
 
 - (void)loadWizardStepAtIndex:(int)index;
 
-- (void)scrollRight;
+- (int)scrollRight;
 
-- (void)scrollLeft;
+- (int)scrollLeft;
 @end

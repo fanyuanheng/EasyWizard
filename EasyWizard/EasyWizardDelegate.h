@@ -7,4 +7,6 @@
 
 @optional
 - (UIPageControl *)updatePageStepAtIndex:(int)index;
+- (UIButton *)leftNavButtonAtIndex:(int)index;
+- (UIButton *)rightNavButtonAtIndex:(int)index;
 @end

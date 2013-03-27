@@ -3,7 +3,6 @@
 //  EasyWizard
 //
 //  Created by Yuan Heng Fan on 03/26/13.
-//  Copyright (c) 2013 Simpul Co. All rights reserved.
 //
 
 #import "AppDelegate.h"

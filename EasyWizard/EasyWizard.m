@@ -28,6 +28,7 @@
 
 - (void)loadWizard {
     [self configEasyWizard];
+    [self updateNavButtonsIfNecessary];
     currentIndex = 0;
     for (int i = 0; i < [easyWizardDelegate numberOfSteps]; i++) {
         [self loadWizardStepAtIndex:i];
@@ -44,26 +45,39 @@
     [self addSubview:view];
 }
 
-- (void)scrollRight {
+- (int)scrollRight {
     if (currentIndex < [easyWizardDelegate numberOfSteps] - 1) {
         currentIndex++;
         [self updatePageIfNecessary];
+        [self updateNavButtonsIfNecessary];
         [self setContentOffset:CGPointMake(CGRectGetWidth(self.frame) * currentIndex, 0) animated:YES];
     }
+    currentIndex;
 }
 
-- (void)scrollLeft {
+- (int)scrollLeft {
     if (currentIndex > 0) {
         currentIndex--;
         [self updatePageIfNecessary];
+        [self updateNavButtonsIfNecessary];
         [self setContentOffset:CGPointMake(CGRectGetWidth(self.frame) * currentIndex, 0) animated:YES];
+    }
+    currentIndex;
+}
+
+- (void)updateNavButtonsIfNecessary {
+    if ([(id) easyWizardDelegate respondsToSelector:@selector(leftNavButtonAtIndex:)]) {
+        [easyWizardDelegate leftNavButtonAtIndex:currentIndex];
+    }
+    if ([(id) easyWizardDelegate respondsToSelector:@selector(rightNavButtonAtIndex:)]) {
+        [easyWizardDelegate rightNavButtonAtIndex:currentIndex];
     }
 }
 
 - (void)updatePageIfNecessary {
     if ([(id) easyWizardDelegate respondsToSelector:@selector(updatePageStepAtIndex:)]) {
-            [easyWizardDelegate updatePageStepAtIndex:currentIndex];
-        }
+        [easyWizardDelegate updatePageStepAtIndex:currentIndex];
+    }
 }
 
 @end

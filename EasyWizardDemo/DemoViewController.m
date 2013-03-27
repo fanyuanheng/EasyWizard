@@ -8,6 +8,8 @@
 
 #import "DemoViewController.h"
 
+#define NUM_OF_STEPS 3
+
 @interface DemoViewController ()
 
 @end
@@ -16,26 +18,13 @@
 
 @synthesize wizardView1, wizardView2, wizardView3, leftNavButton, rightNavButton, pageControl, easyWizard;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     easyWizard.easyWizardDelegate = self;
     [easyWizard loadWizard];
-    self.pageControl.numberOfPages = 3;
+    self.pageControl.numberOfPages = NUM_OF_STEPS;
     self.pageControl.currentPage = 0;
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)nextStep {
@@ -49,7 +38,7 @@
 #pragma EasyWizardDelegate methods
 
 - (int)numberOfSteps {
-    return 3;
+    return NUM_OF_STEPS;
 }
 
 - (UIView *)viewForStepAtIndex:(int)index {
@@ -68,6 +57,25 @@
 - (UIPageControl *)updatePageStepAtIndex:(int)index {
     pageControl.currentPage = index;
     return pageControl;
+}
+
+- (UIButton *)leftNavButtonAtIndex:(int)index {
+    if (index == 0) {
+        leftNavButton.hidden = YES;
+    } else{
+        leftNavButton.hidden = NO;
+    }
+
+    return leftNavButton;
+}
+
+- (UIButton *)rightNavButtonAtIndex:(int)index {
+    if (index < NUM_OF_STEPS - 1) {
+        [rightNavButton setTitle:@"Next" forState:UIControlStateNormal];
+    } else {
+        [rightNavButton setTitle:@"Done" forState:UIControlStateNormal];
+    }
+    return rightNavButton;
 }
 
 
