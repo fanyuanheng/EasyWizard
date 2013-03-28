@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/fanyuanheng/EasyWizard"
   s.license      = 'MIT'
   s.author       = { "Yuan Heng Fan" => "yuan.fan@simpul.com.au" }
-  s.source       = { :git => "https://github.com/fanyuanheng/EasyWizard", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/fanyuanheng/EasyWizard.git", :tag => "0.0.1" }
   s.platform     = :ios
   s.source_files = 'EasyWizard', 'EasyWizard/**/*.{h,m}'
   s.requires_arc = true
